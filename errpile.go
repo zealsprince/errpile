@@ -66,7 +66,7 @@ func (ep *ErrorPile) Error(err error) error {
 }
 
 // DefaultErrorPile provides a default configuration.
-var DefaultErrorPile = New("%[1]s->%[2]v", true, false)
+var DefaultErrorPile = New("%[1]s->%[2]v", true, true)
 
 // Error is a shortcut function using the default ErrorPile configuration.
 func Error(err error) error {
